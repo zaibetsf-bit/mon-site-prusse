@@ -1,0 +1,239 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Contour pour lisibilité partout */
+}
+
+/* 🇵🇷 FOND : DRAPEAU DE LA PRUSSE — UNIQUE, CENTRÉ, FIXE */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    line-height: 1.7;
+    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsOfxvYC7d0pach_h6DhVlKrRvj5ViukRA39GKH-6DAldLmqaJ_y7e7PB9nkIDZArwrlTbzg58eAeIKGd1iJXcRCnYWNY0XXug4cWBxyBDGA');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* HEADER — BANNIÈRE ROYALE */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(0, 0, 0, 0.6); /* Overlay noir transparent */
+    backdrop-filter: blur(2px);
+    border-bottom: 4px double #d4af37; /* Ligne dorée = royauté */
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    color: #d4af37; /* Or */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #eee;
+}
+
+/* NAVIGATION — BARRE DE COMMANDE */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    border-bottom: 2px solid #d4af37;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* CONTENU PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* SECTIONS — BLOCS TRANSPARENTS */
+section {
+    background: rgba(0, 0, 0, 0.75); /* Noir transparent */
+    margin: 2.5rem 0;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+section h2 {
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d4af37;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 2px solid rgba(212, 175, 55, 0.5);
+}
+
+/* RÔLES — GRILLE ÉLÉGANTE */
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.role {
+    flex: 1 1 300px;
+    background: rgba(30, 30, 30, 0.7);
+    padding: 1.8rem;
+    border-radius: 8px;
+    border-left: 5px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.role:hover {
+    transform: scale(1.03);
+    background: rgba(40, 40, 40, 0.8);
+}
+
+.role h3 {
+    color: #d4af37;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+/* BOUTON “REJOINDRE” — STYLE MILITAIRE */
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #d4af37;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+/* RÈGLEMENT — STYLE DÉCRET IMPÉRIAL */
+.reglement-container {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 4px double #d4af37;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.reglement-title {
+    color: #d4af37 !important;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.8) !important;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 1rem;
+}
+
+.article {
+    background: rgba(20, 20, 20, 0.7) !important;
+    border-left: 4px solid #d4af37 !important;
+    margin: 1.5rem 0 !important;
+    padding: 1.5rem !important;
+}
+
+.article h3 {
+    color: #d4af37 !important;
+}
+
+.sanctions {
+    background: rgba(50, 0, 0, 0.7) !important;
+    border: 2px dashed #8B0000 !important;
+}
+
+.serment {
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: #d4af37 !important;
+    border: 2px solid #d4af37 !important;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* FOOTER — DISCRET ET ROYAL */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaa;
+    font-size: 0.95rem;
+    border-top: 2px solid #333;
+    margin-top: 3rem;
+}
+
+.back-btn {
+    display: block;
+    width: 220px;
+    margin: 2rem auto;
+    padding: 12px;
+    background: #222;
+    color: #d4af37;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* RESPONSIVE — POUR TELEPHONE */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.5rem; }
+    nav a { display: block; margin: 8px 0; }
+    .roles { flex-direction: column; }
+    section { padding: 1.5rem; }
+}
