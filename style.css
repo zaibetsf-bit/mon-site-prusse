@@ -3,15 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Contour pour lisibilité partout */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
-/* 🇵🇷 FOND : DRAPEAU DE LA PRUSSE — UNIQUE, CENTRÉ, FIXE */
+/* 🇵🇷 FOND : DRAPEAU DE LA PRUSSE */
 body {
     font-family: 'Cormorant Garamond', serif;
     color: white;
     line-height: 1.7;
-    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsOfxvYC7d0pach_h6DhVlKrRvj5ViukRA39GKH-6DAldLmqaJ_y7e7PB9nkIDZArwrlTbzg58eAeIKGd1iJXcRCnYWNY0XXug4cWBxyBDGA');
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Prussia.svg/1280px-Flag_of_Prussia.svg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,221 +19,154 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER — BANNIÈRE ROYALE */
+/* HEADER */
 header {
     text-align: center;
-    padding: 3rem 1rem;
-    background: rgba(0, 0, 0, 0.6); /* Overlay noir transparent */
+    padding: 2.5rem 1rem;
+    background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(2px);
-    border-bottom: 4px double #d4af37; /* Ligne dorée = royauté */
+    border-bottom: 3px double #d4af37;
 }
 
 header h1 {
     font-family: 'Cinzel', serif;
-    font-size: 3.5rem;
-    color: #d4af37; /* Or */
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+    font-size: 2.8rem;
+    color: #d4af37;
+    letter-spacing: 1px;
 }
 
 header p {
     font-style: italic;
-    font-size: 1.2rem;
     margin-top: 0.5rem;
     color: #eee;
+    font-size: 1.1rem;
 }
 
-/* NAVIGATION — BARRE DE COMMANDE */
+/* NAVIGATION */
 nav {
     background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     text-align: center;
-    backdrop-filter: blur(3px);
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid #333;
 }
 
 nav a {
     color: #d4af37;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 12px;
     font-weight: bold;
-    font-size: 1.1rem;
-    padding: 8px 16px;
+    font-size: 1.05rem;
+    padding: 6px 12px;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: all 0.2s;
 }
 
 nav a:hover {
-    background: #d4af37;
-    color: #000;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background: rgba(212, 175, 55, 0.2);
+    transform: translateY(-1px);
 }
 
-/* CONTENU PRINCIPAL */
+/* CONTENU */
 main {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
 
-/* SECTIONS — BLOCS TRANSPARENTS */
 section {
-    background: rgba(0, 0, 0, 0.75); /* Noir transparent */
-    margin: 2.5rem 0;
-    padding: 2.5rem;
-    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
     border: 1px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
 
 section h2 {
     color: #d4af37;
     font-family: 'Cinzel', serif;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #d4af37;
 }
 
-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
-    border: 2px solid rgba(212, 175, 55, 0.5);
-}
-
-/* RÔLES — GRILLE ÉLÉGANTE */
+/* RÔLES / GRILLE */
 .roles {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
     margin-top: 1.5rem;
 }
 
 .role {
-    flex: 1 1 300px;
-    background: rgba(30, 30, 30, 0.7);
-    padding: 1.8rem;
+    flex: 1 1 280px;
+    background: rgba(20, 20, 20, 0.7);
+    padding: 1.6rem;
     border-radius: 8px;
-    border-left: 5px solid #d4af37;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-}
-
-.role:hover {
-    transform: scale(1.03);
-    background: rgba(40, 40, 40, 0.8);
+    border-left: 4px solid #d4af37;
 }
 
 .role h3 {
     color: #d4af37;
     margin-bottom: 0.8rem;
-    font-size: 1.4rem;
 }
 
-/* BOUTON “REJOINDRE” — STYLE MILITAIRE */
+/* BOUTON */
 .btn {
     display: inline-block;
     background: #000;
     color: #d4af37;
-    padding: 15px 40px;
+    padding: 12px 30px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3rem;
-    border: 3px solid #d4af37;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    margin: 1rem 0;
+    transition: all 0.3s;
 }
 
 .btn:hover {
     background: #d4af37;
     color: #000;
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
 }
 
-/* RÈGLEMENT — STYLE DÉCRET IMPÉRIAL */
-.reglement-container {
-    background: rgba(0, 0, 0, 0.85) !important;
-    border: 4px double #d4af37;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.7);
-    backdrop-filter: blur(5px);
-}
-
-.reglement-title {
-    color: #d4af37 !important;
-    text-shadow: 0 0 15px rgba(212, 175, 55, 0.8) !important;
-    border-bottom: 3px solid #d4af37;
-    padding-bottom: 1rem;
-}
-
-.article {
-    background: rgba(20, 20, 20, 0.7) !important;
-    border-left: 4px solid #d4af37 !important;
-    margin: 1.5rem 0 !important;
-    padding: 1.5rem !important;
-}
-
-.article h3 {
-    color: #d4af37 !important;
-}
-
-.sanctions {
-    background: rgba(50, 0, 0, 0.7) !important;
-    border: 2px dashed #8B0000 !important;
+/* SERMENT / SANCTIONS */
+.serment, .sanctions {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.8rem 0;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid #d4af37;
 }
 
 .serment {
-    background: rgba(0, 0, 0, 0.9) !important;
-    color: #d4af37 !important;
-    border: 2px solid #d4af37 !important;
-    font-style: italic;
-    font-size: 1.2rem;
+    color: #d4af37;
 }
 
-/* FOOTER — DISCRET ET ROYAL */
+.sanctions {
+    color: #ffcccb;
+    border-color: #8B0000;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.8);
     color: #aaa;
     font-size: 0.95rem;
-    border-top: 2px solid #333;
     margin-top: 3rem;
+    border-top: 1px solid #333;
 }
 
-.back-btn {
-    display: block;
-    width: 220px;
-    margin: 2rem auto;
-    padding: 12px;
-    background: #222;
-    color: #d4af37;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #d4af37;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.back-btn:hover {
-    background: #d4af37;
-    color: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-}
-
-/* RESPONSIVE — POUR TELEPHONE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    header h1 { font-size: 2.5rem; }
+    header h1 { font-size: 2.2rem; }
     nav a { display: block; margin: 8px 0; }
     .roles { flex-direction: column; }
-    section { padding: 1.5rem; }
 }
