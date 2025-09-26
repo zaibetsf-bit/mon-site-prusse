@@ -11,7 +11,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     color: white;
     line-height: 1.7;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Prussia.svg/1280px-Flag_of_Prussia.svg.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Flag_of_the_Kingdom_of_Prussia_%281701-1750%29.svg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -169,4 +169,5 @@ footer {
     header h1 { font-size: 2.2rem; }
     nav a { display: block; margin: 8px 0; }
     .roles { flex-direction: column; }
+
 }
